@@ -1,5 +1,11 @@
-numpy == 1.23.5
+
+certifi==2020.12.5
+click
 Flask==2.0.3
 Jinja2==3.1.2
 mlflow==2.1.1
-scikit-learn
+gunicorn==20.0.4
+itsdangerous
+MarkupSafe
+Werkzeug
+wincertstore==0.2
