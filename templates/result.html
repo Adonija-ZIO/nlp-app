@@ -1,0 +1,8 @@
+{% if predictions %}
+<h2>Predicted Labels:</h2>
+<ul>
+  {% for label in predictions %}
+  <li>{{ label }}</li>
+  {% endfor %}
+</ul>
+{% endif %}

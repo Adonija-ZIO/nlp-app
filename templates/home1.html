@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NLP Multilabel Classification Demo</title>
+  </head>
+  <body>
+    <h1>NLP Multilabel Classification Demo</h1>
+
+    <form method="POST" action="/predict">
+      <label for="text">Enter some text:</label>
+      <br>
+      <textarea id="text" name="text" rows="4" cols="50"></textarea>
+      <br>
+      <button type="submit">Predict Labels</button>
+    </form>
+
+    {% if predictions %}
+    <h2>Predicted Labels:</h2>
+    <ul>
+      {% for label in predictions %}
+      <li>{{ label }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+  </body>
+
+  {% if predictions %}
+<h2>Predicted Labels:</h2>
+<ul>
+  {% for label in predictions %}
+  <li>{{ label }}</li>
+  {% endfor %}
+</ul>
+{% endif %}
+</html>

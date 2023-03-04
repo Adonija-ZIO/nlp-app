@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Automatic categorisation of stack overflow questions</title>
+    <style>
+      ul {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+
+  </head>
+  <body>
+    <h1>Automatic categorisation of stack overflow questions</h1>
+
+    <form method="POST" action="/predict">
+      <label for="title">Question Title:</label>
+      <br>
+      <textarea id="text" name="title" rows="2" cols="50" placeholder="Enter Your Title Here..."></textarea>
+      <br>
+      <label for="body">Question:</label>
+      <br>
+      <textarea id="body" name="body" rows="10" cols="50" placeholder="Enter Your Question Here..."></textarea>
+      <br>
+      <button type="submit">Predict Labels</button>
+    </form>
+
+    {% if predictions %}
+    <h2>Predicted Labels:</h2>
+    <ul>
+        <br>
+      {% for label in predictions %}
+      <li>{{ label }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+        <div class='footer'>
+      <p class='footer-description'>Made with ❤️ by Adonija ZIO.</p>
+    </div>
+
+  </body>
+
+</html>
