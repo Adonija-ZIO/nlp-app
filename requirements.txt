@@ -1,5 +1,4 @@
-certifi==2020.12.5
-Flas
+Flask
 Jinja2
 gunicorn==20.0.4
 numba == 0.56.0
