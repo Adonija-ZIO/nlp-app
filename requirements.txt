@@ -6,5 +6,5 @@ Jinja2==3.1.2
 MarkupSafe
 Werkzeug
 wincertstore==0.2
-scipy==1.10.0
-scikit-learn==1.2.1
+scipy
+scikit-learn
