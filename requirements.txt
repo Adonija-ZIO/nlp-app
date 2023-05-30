@@ -3,7 +3,6 @@ certifi==2020.12.5
 click
 Flask
 itsdangerous
-Flask==2.0.3
 Jinja2==3.1.2
 mlflow==2.1.1
 MarkupSafe
