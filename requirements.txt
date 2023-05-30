@@ -1,4 +1,3 @@
-
 certifi==2020.12.5
 click
 Flask
@@ -7,3 +6,4 @@ Jinja2==3.1.2
 MarkupSafe
 Werkzeug
 wincertstore==0.2
+scikit-learn
